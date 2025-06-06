@@ -2,151 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Umbel Kids Zone</title>
-
-  <!-- Favicon (ICO format) -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .navbar {
-      background-color: #004085;
-    }
-    .navbar-brand img {
-      height: 40px;
-      margin-right: 10px;
-    }
-    .navbar-brand, .nav-link {
-      color: white !important;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1600417034300-04ac7a6f2f79') center center/cover no-repeat;
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-    }
-    .hero h1 {
-      font-size: 4rem;
-    }
-    .section {
-      padding: 60px 0;
-    }
-    .footer {
-      background-color: #002752;
-      color: white;
-      padding: 30px 0;
-    }
-    .footer a {
-      color: #ddd;
-      text-decoration: none;
-    }
-    .footer a:hover {
-      color: white;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asia Pacific College</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="favicon.ico" alt="Umbel Kids Zone Logo">
-      Umbel Kids Zone
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="#programs" class="nav-link">Programs</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
+  <header class="header">
+    <div class="container">
+      <div class="logo">Asia Pacific College</div>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </div>
-</nav>
+  </header>
 
-<!-- Hero Banner -->
-<section class="hero text-center">
-  <div>
-    <h1>Welcome to Umbel Kids Zone</h1>
-    <p class="lead">A joyful place where learning meets creativity!</p>
-  </div>
-</section>
+  <section class="hero">
+    <div class="container">
+      <h1>Excellence in Education</h1>
+      <p>Join Asia Pacific College and discover your potential.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
 
-<!-- About Section -->
-<section class="section" id="about">
-  <div class="container text-center">
-    <h2>About Us</h2>
-    <p class="mt-3">
-      Umbel Kids Zone is a child-friendly learning environment nurturing curiosity and growth.
-      We focus on early childhood development with modern teaching methods and caring educators.
-    </p>
-  </div>
-</section>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Asia Pacific College is committed to academic excellence, innovation, and student success.</p>
+    </div>
+  </section>
 
-<!-- Programs Section -->
-<section class="section bg-light" id="programs">
-  <div class="container text-center">
-    <h2>Our Programs</h2>
-    <div class="row mt-4">
-      <div class="col-md-4">
-        <i class="fas fa-child fa-3x text-primary mb-3"></i>
-        <h4>Play Group</h4>
-        <p>Fun and interactive activities to foster early learning and social skills.</p>
-      </div>
-      <div class="col-md-4">
-        <i class="fas fa-book-open fa-3x text-success mb-3"></i>
-        <h4>Kindergarten</h4>
-        <p>Structured learning with creative play to prepare for formal education.</p>
-      </div>
-      <div class="col-md-4">
-        <i class="fas fa-puzzle-piece fa-3x text-warning mb-3"></i>
-        <h4>Creative Activities</h4>
-        <p>Art, music, games and more — helping kids explore their talents and imagination.</p>
+  <section id="programs" class="section">
+    <div class="container">
+      <h2>Our Programs</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Science</h3>
+          <p>Advanced science curriculum with top-tier faculty.</p>
+        </div>
+        <div class="card">
+          <h3>Management</h3>
+          <p>Practical and theoretical skills in business and economics.</p>
+        </div>
+        <div class="card">
+          <h3>Humanities</h3>
+          <p>Creative and critical thinking through arts and literature.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Contact Section -->
-<section class="section" id="contact">
-  <div class="container text-center">
-    <h2>Contact Us</h2>
-    <p class="mt-3">We’d love to hear from you. Reach out via phone or email!</p>
-    <p><i class="fas fa-phone"></i> +977-9876543210</p>
-    <p><i class="fas fa-envelope"></i> info@umbelkidszone.edu.np</p>
-    <p><i class="fas fa-map-marker-alt"></i> Lalitpur, Nepal</p>
-  </div>
-</section>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-<!-- Footer -->
-<footer class="footer text-center">
-  <div class="container">
-    <p>&copy; 2025 Umbel Kids Zone. All Rights Reserved.</p>
-    <p>
-      <a href="#"><i class="fab fa-facebook-f me-2"></i></a>
-      <a href="#"><i class="fab fa-instagram me-2"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
-    </p>
-  </div>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Asia Pacific College. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
